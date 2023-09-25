@@ -1,0 +1,25 @@
+{
+  "require": {
+    "wikimedia/composer-merge-plugin": "dev-master",
+    "phpoffice/phpspreadsheet": "^1.28"
+  },
+  "config": {
+    "vendor-dir": "./vendor",
+    "platform": {
+      "php": "8.0"
+    },
+    "allow-plugins": {
+      "wikimedia/composer-merge-plugin": true
+    }
+  },
+  "extra": {
+    "merge-plugin": {
+      "require": [
+        "/home/bitrix/www/bitrix/composer-bx.json"
+      ]
+    }
+  },
+  "require-dev": {
+    "kint-php/kint": "^5.0"
+  }
+}
